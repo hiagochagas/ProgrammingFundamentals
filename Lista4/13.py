@@ -9,7 +9,7 @@ def soma_quase_todos(lista,x,i):
     else:
       lista[0]+=x
     #print(lista,x)
-    return lista[0:1] + soma_quase_todos(lista[1:],x,i-1)
+    return [lista[0]] + soma_quase_todos(lista[1:],x,i-1)
 l=[]
 tam=int(input("Tamanho da lista:"))
 for a in range(tam):
